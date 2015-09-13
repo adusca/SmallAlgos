@@ -1,6 +1,7 @@
 import bisect
 from collections import Counter
 
+
 def binary_in(arr, el, start):
     pos = bisect.bisect_left(arr, el, start)
     return pos < len(arr) and arr[pos] == el
@@ -20,7 +21,7 @@ class Solution(object):
             for j in xrange(i + 1, n):
                 hash_table.subtract(nums[j:j+1])
                 val_k = -nums[i] - nums[j]
-                if hash_table[val_k]
+                if hash_table[val_k]:
                     ans.add((nums[i], nums[j], val_k))
         return map(list, list(ans))
 
