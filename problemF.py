@@ -1,31 +1,67 @@
-def max_profit(machines, C, D):
-    pass
+class Machine:
+    def __init__(self, day, price, resale, profit_per_day):
+        self.day = day
+        self.price = price
+        self.resale = resale
+        self.profit_per_day = profit_per_day
+
+    def profit_on_day(self, d):
+        upfront_cost = self.price - self.resale
+        return self.profit_per_day*(d - self.day - 1) - upfront_cost
 
 
-def get_next_day(machines, d):
-    pass
+class TestCase:
+    @staticmethod
+    def read():
+        ans = TestCase()
+        N, ans.C, ans.D = map(int, raw_input().split(" "))
+        if (N, ans.C, ans.D) == (0, 0, 0):
+            return None
+
+        # Initialize machines with 2 sentinel machines
+        ans.machines = [Machine(0, 0, 0, 0), Machine(ans.D+1, 0, 0, 0)]
+        for i in range(N):
+            Di, Pi, Ri, Gi = map(int, raw_input().split(" "))
+            ans.machines.append(Machine(Di, Pi, Ri, Gi))
+        return ans
+
+    def max_profit(self):
+        self.machines.sort(key=lambda x: x.day)
+        self.cache = [-1 for _ in xrange(len(self.machines))]
+        return self.max_ending_here(len(self.machines) - 1)
+
+    def max_ending_here(self, i):
+        """
+        Return the maximum possible total capital before day Di starts
+        """
+        if i == 0:
+            return self.C
+
+        if self.cache[i] != -1:
+            return self.cache[i]
+
+        today = self.machines[i].day
+        maximum = 0
+
+        # Loop on every possible value for current machine
+        for j in xrange(0, i):
+            m = self.max_ending_here(j)
+            if m >= self.machines[j].price:
+                maximum = max(m + self.machines[j].profit_on_day(today),
+                              maximum)
+
+        self.cache[i] = maximum
+        return maximum
 
 
-def max_starting_here(machines, i, d, C, D):
-    """
-    Return the maximum possible profit after day d, considering you
-    begin with machine i, C capital.
-    """
-    next_day = get_next_day(machines, d)
-    profit_until_sale = machines[i][3]*(next_day - d - 1)
-    buy = machines[i][2] - machines[i + 1][1] + max_starting_here(
-        machines, i + 1, next_day,
-        C + machines[i][2] - machines[i + 1][1] + profit_until_sale, D)
-    stay = max_starting_here(machines, i, next_day, C + profit_until_sale, D)
-    return max(buy, stay)
+def main():
+    case = 1
+    while True:
+        tc = TestCase.read()
+        if tc is None:
+            break
+        print "Case %i: %i" % (case, tc.max_profit())
+        case += 1
 
-# Reading input and printing output
-while True:
-    C, N, D = map(int, raw_input().split(" "))
-    if (C, N, D) == (0, 0, 0):
-        break
-    machines = []
-    for i in range(N):
-        Di, Pi, Ri, Gi = map(int, raw_input.split(" "))
-        machines.append((Di, Pi, Ri, Gi))
-    print "Case %i: %i" % (i + 1, max_profit(machines, C, D))
+if __name__ == "__main__":
+    main()
