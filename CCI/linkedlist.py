@@ -17,6 +17,11 @@ class LinkedList:
         self.head = node
         self.length += 1
 
+    def add_node(self, node):
+        node.next = self.head
+        self.head = Node
+        self.length += 1
+
     def pop(self):
         ret = self.head.value
         self.head = self.head.next
@@ -52,12 +57,9 @@ class LinkedList:
 
         return l
 
-l = LinkedList()
-l.append(1)
-l.append(2)
-l.append(3)
-l.print_list()
 
-a = LinkedList.create_from_array([1, 2, 3, 4, 5])
-a.print_list()
-print a.length
+def print_list(node):
+    while node:
+        print node,
+        node = node.next
+    print ""
