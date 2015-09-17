@@ -58,6 +58,24 @@ class LinkedList:
         return l
 
 
+class Stack:
+
+    def __init__(self):
+        self.stack = LinkedList()
+
+    def push(self, value):
+        self.stack.add(value)
+
+    def pop(self):
+        return self.stack.pop()
+
+    def empty(self):
+        return self.stack.head is None
+
+    def peek(self):
+        return self.stack.head.value
+
+
 def print_list_from_node(node):
     while node:
         print node,
