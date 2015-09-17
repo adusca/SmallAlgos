@@ -58,7 +58,7 @@ class LinkedList:
         return l
 
 
-def print_list(node):
+def print_list_from_node(node):
     while node:
         print node,
         node = node.next
