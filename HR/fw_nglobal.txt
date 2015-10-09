@@ -1,0 +1,345 @@
+magic = 168627358
+modified time = 0
+size = 777
+object = argcount = 0
+         kwonlyargcount = 0
+         nlocals = 0
+         stacksize = 2
+         flags =
+         varnames = ()
+         freevars = ()
+         cellvars = ()
+         filename = "fw.py"
+         name = "<module>"
+         firstlineno = 0
+         lnotab = [(0, 1),(12, 2),(12, 29)]
+         names = ("sys","solve")
+         const 0 = 0
+         const 1 = None
+         const 2 = argcount = 0
+                   kwonlyargcount = 0
+                   nlocals = 11
+                   stacksize = 7
+                   flags =
+                   varnames = ("INF","dist","i","j","k","m","n","q","w","x","y")
+                   freevars = ()
+                   cellvars = ()
+                   filename = "fw.py"
+                   name = "solve"
+                   firstlineno = 3
+                   lnotab = [(0, 1),(10, 2),(33, 2),(21, 1),(26, 1),(18, 2),(19, 1),(42, 1),(18, 2),(26, 1),(26, 1),(20, 1),(26, 1),(66, 2),(26, 1),(26, 1),(20, 1),(26, 2),(9, 1),(19, 1),(39, 1)]
+                   names = ("map","int","input","split","range","sys","stdin","readline","min","print")
+                   const 0 = None
+                   const 1 = 350
+                   const 2 = 401
+                   const 3 = " "
+                   const 4 = argcount = 2
+                             kwonlyargcount = 0
+                             nlocals = 4
+                             stacksize = 6
+                             flags =
+                             varnames = ("n","range","$result","_")
+                             freevars = ()
+                             cellvars = ()
+                             filename = "fw.py"
+                             name = "<comprehension>"
+                             firstlineno = 8
+                             lnotab = [(9, 0)]
+                             names = ("append","INF")
+                             const 0 = 1
+                             const 1 = argcount = 3
+                                       kwonlyargcount = 0
+                                       nlocals = 5
+                                       stacksize = 3
+                                       flags =
+                                       varnames = ("INF","n","range","$result","_")
+                                       freevars = ()
+                                       cellvars = ()
+                                       filename = "fw.py"
+                                       name = "<comprehension>"
+                                       firstlineno = 8
+                                       lnotab = [(9, 0)]
+                                       names = ("append")
+                                       const 0 = 1
+                                       const 1 = None
+                                       code = 0 BUILD_LIST 0
+                                              3 STORE_FAST 3
+                                              6 SETUP_LOOP 37
+                                              9 LOAD_FAST 2
+                                              12 LOAD_FAST 1
+                                              15 LOAD_CONST 0
+                                              18 BINARY_ADD
+                                              19 CALL_FUNCTION 1
+                                              22 GET_ITER
+                                              23 FOR_ITER 19
+                                              26 STORE_FAST 4
+                                              29 LOAD_FAST 3
+                                              32 LOAD_ATTR 0
+                                              35 LOAD_FAST 0
+                                              38 CALL_FUNCTION 1
+                                              41 POP_TOP
+                                              42 JUMP_ABSOLUTE 23
+                                              45 POP_BLOCK
+                                              46 LOAD_FAST 3
+                                              49 RETURN_VALUE
+                                              50 LOAD_CONST 1
+                                              53 RETURN_VALUE
+                             const 2 = "<listcomp>"
+                             const 3 = None
+                             code = 0 BUILD_LIST 0
+                                    3 STORE_FAST 2
+                                    6 SETUP_LOOP 55
+                                    9 LOAD_FAST 1
+                                    12 LOAD_FAST 0
+                                    15 LOAD_CONST 0
+                                    18 BINARY_ADD
+                                    19 CALL_FUNCTION 1
+                                    22 GET_ITER
+                                    23 FOR_ITER 37
+                                    26 STORE_FAST 3
+                                    29 LOAD_FAST 2
+                                    32 LOAD_ATTR 0
+                                    35 LOAD_CONST 1
+                                    38 LOAD_CONST 2
+                                    41 MAKE_FUNCTION 0
+                                    44 LOAD_GLOBAL 1
+                                    47 LOAD_FAST 0
+                                    50 LOAD_FAST 1
+                                    53 CALL_FUNCTION 3
+                                    56 CALL_FUNCTION 1
+                                    59 POP_TOP
+                                    60 JUMP_ABSOLUTE 23
+                                    63 POP_BLOCK
+                                    64 LOAD_FAST 2
+                                    67 RETURN_VALUE
+                                    68 LOAD_CONST 3
+                                    71 RETURN_VALUE
+                   const 5 = "<listcomp>"
+                   const 6 = 1
+                   const 7 = 0
+                   code = 0 LOAD_CONST 1
+                          3 LOAD_CONST 2
+                          6 BINARY_MULTIPLY
+                          7 STORE_FAST 0
+                          10 LOAD_GLOBAL 0
+                          13 LOAD_GLOBAL 1
+                          16 LOAD_GLOBAL 2
+                          19 CALL_FUNCTION 0
+                          22 LOAD_ATTR 3
+                          25 LOAD_CONST 3
+                          28 CALL_FUNCTION 1
+                          31 CALL_FUNCTION 2
+                          34 UNPACK_SEQUENCE 2
+                          37 STORE_FAST 6
+                          40 STORE_FAST 5
+                          43 LOAD_CONST 4
+                          46 LOAD_CONST 5
+                          49 MAKE_FUNCTION 0
+                          52 LOAD_FAST 6
+                          55 LOAD_GLOBAL 4
+                          58 CALL_FUNCTION 2
+                          61 STORE_FAST 1
+                          64 SETUP_LOOP 41
+                          67 LOAD_GLOBAL 4
+                          70 LOAD_CONST 6
+                          73 LOAD_FAST 6
+                          76 LOAD_CONST 6
+                          79 BINARY_ADD
+                          80 CALL_FUNCTION 2
+                          83 GET_ITER
+                          84 FOR_ITER 20
+                          87 STORE_FAST 2
+                          90 LOAD_CONST 7
+                          93 LOAD_FAST 1
+                          96 LOAD_FAST 2
+                          99 BINARY_SUBSCR
+                          100 LOAD_FAST 2
+                          103 STORE_SUBSCR
+                          104 JUMP_ABSOLUTE 84
+                          107 POP_BLOCK
+                          108 SETUP_LOOP 76
+                          111 LOAD_GLOBAL 4
+                          114 LOAD_FAST 5
+                          117 CALL_FUNCTION 1
+                          120 GET_ITER
+                          121 FOR_ITER 62
+                          124 STORE_FAST 2
+                          127 LOAD_GLOBAL 0
+                          130 LOAD_GLOBAL 1
+                          133 LOAD_GLOBAL 5
+                          136 LOAD_ATTR 6
+                          139 LOAD_ATTR 7
+                          142 CALL_FUNCTION 0
+                          145 LOAD_ATTR 3
+                          148 LOAD_CONST 3
+                          151 CALL_FUNCTION 1
+                          154 CALL_FUNCTION 2
+                          157 UNPACK_SEQUENCE 3
+                          160 STORE_FAST 9
+                          163 STORE_FAST 10
+                          166 STORE_FAST 8
+                          169 LOAD_FAST 8
+                          172 LOAD_FAST 1
+                          175 LOAD_FAST 9
+                          178 BINARY_SUBSCR
+                          179 LOAD_FAST 10
+                          182 STORE_SUBSCR
+                          183 JUMP_ABSOLUTE 121
+                          186 POP_BLOCK
+                          187 SETUP_LOOP 161
+                          190 LOAD_GLOBAL 4
+                          193 LOAD_CONST 6
+                          196 LOAD_FAST 6
+                          199 LOAD_CONST 6
+                          202 BINARY_ADD
+                          203 CALL_FUNCTION 2
+                          206 GET_ITER
+                          207 FOR_ITER 140
+                          210 STORE_FAST 4
+                          213 SETUP_LOOP 131
+                          216 LOAD_GLOBAL 4
+                          219 LOAD_CONST 6
+                          222 LOAD_FAST 6
+                          225 LOAD_CONST 6
+                          228 BINARY_ADD
+                          229 CALL_FUNCTION 2
+                          232 GET_ITER
+                          233 FOR_ITER 110
+                          236 STORE_FAST 2
+                          239 LOAD_FAST 1
+                          242 LOAD_FAST 2
+                          245 BINARY_SUBSCR
+                          246 LOAD_FAST 4
+                          249 BINARY_SUBSCR
+                          250 LOAD_FAST 0
+                          253 COMPARE_OP 0
+                          256 POP_JUMP_IF_FALSE 343
+                          259 SETUP_LOOP 78
+                          262 LOAD_GLOBAL 4
+                          265 LOAD_CONST 6
+                          268 LOAD_FAST 6
+                          271 LOAD_CONST 6
+                          274 BINARY_ADD
+                          275 CALL_FUNCTION 2
+                          278 GET_ITER
+                          279 FOR_ITER 57
+                          282 STORE_FAST 3
+                          285 LOAD_GLOBAL 8
+                          288 LOAD_FAST 1
+                          291 LOAD_FAST 2
+                          294 BINARY_SUBSCR
+                          295 LOAD_FAST 4
+                          298 BINARY_SUBSCR
+                          299 LOAD_FAST 1
+                          302 LOAD_FAST 4
+                          305 BINARY_SUBSCR
+                          306 LOAD_FAST 3
+                          309 BINARY_SUBSCR
+                          310 BINARY_ADD
+                          311 LOAD_FAST 1
+                          314 LOAD_FAST 2
+                          317 BINARY_SUBSCR
+                          318 LOAD_FAST 3
+                          321 BINARY_SUBSCR
+                          322 CALL_FUNCTION 2
+                          325 LOAD_FAST 1
+                          328 LOAD_FAST 2
+                          331 BINARY_SUBSCR
+                          332 LOAD_FAST 3
+                          335 STORE_SUBSCR
+                          336 JUMP_ABSOLUTE 279
+                          339 POP_BLOCK
+                          340 JUMP_FORWARD 0
+                          343 JUMP_ABSOLUTE 233
+                          346 POP_BLOCK
+                          347 JUMP_ABSOLUTE 207
+                          350 POP_BLOCK
+                          351 SETUP_LOOP 95
+                          354 LOAD_GLOBAL 4
+                          357 LOAD_CONST 6
+                          360 LOAD_FAST 6
+                          363 LOAD_CONST 6
+                          366 BINARY_ADD
+                          367 CALL_FUNCTION 2
+                          370 GET_ITER
+                          371 FOR_ITER 74
+                          374 STORE_FAST 2
+                          377 SETUP_LOOP 65
+                          380 LOAD_GLOBAL 4
+                          383 LOAD_CONST 6
+                          386 LOAD_FAST 6
+                          389 LOAD_CONST 6
+                          392 BINARY_ADD
+                          393 CALL_FUNCTION 2
+                          396 GET_ITER
+                          397 FOR_ITER 44
+                          400 STORE_FAST 3
+                          403 LOAD_FAST 1
+                          406 LOAD_FAST 2
+                          409 BINARY_SUBSCR
+                          410 LOAD_FAST 3
+                          413 BINARY_SUBSCR
+                          414 LOAD_FAST 0
+                          417 COMPARE_OP 2
+                          420 POP_JUMP_IF_FALSE 441
+                          423 LOAD_CONST 6
+                          426 UNARY_NEGATIVE
+                          427 LOAD_FAST 1
+                          430 LOAD_FAST 2
+                          433 BINARY_SUBSCR
+                          434 LOAD_FAST 3
+                          437 STORE_SUBSCR
+                          438 JUMP_FORWARD 0
+                          441 JUMP_ABSOLUTE 397
+                          444 POP_BLOCK
+                          445 JUMP_ABSOLUTE 371
+                          448 POP_BLOCK
+                          449 LOAD_GLOBAL 2
+                          452 CALL_FUNCTION 0
+                          455 STORE_FAST 7
+                          458 SETUP_LOOP 77
+                          461 LOAD_GLOBAL 4
+                          464 LOAD_FAST 7
+                          467 CALL_FUNCTION 1
+                          470 GET_ITER
+                          471 FOR_ITER 63
+                          474 STORE_FAST 2
+                          477 LOAD_GLOBAL 0
+                          480 LOAD_GLOBAL 1
+                          483 LOAD_GLOBAL 5
+                          486 LOAD_ATTR 6
+                          489 LOAD_ATTR 7
+                          492 CALL_FUNCTION 0
+                          495 LOAD_ATTR 3
+                          498 LOAD_CONST 3
+                          501 CALL_FUNCTION 1
+                          504 CALL_FUNCTION 2
+                          507 UNPACK_SEQUENCE 2
+                          510 STORE_FAST 9
+                          513 STORE_FAST 10
+                          516 LOAD_GLOBAL 9
+                          519 LOAD_FAST 1
+                          522 LOAD_FAST 9
+                          525 BINARY_SUBSCR
+                          526 LOAD_FAST 10
+                          529 BINARY_SUBSCR
+                          530 CALL_FUNCTION 1
+                          533 POP_TOP
+                          534 JUMP_ABSOLUTE 471
+                          537 POP_BLOCK
+                          538 LOAD_CONST 0
+                          541 RETURN_VALUE
+         const 3 = "solve"
+         code = 0 LOAD_CONST 0
+                3 LOAD_CONST 1
+                6 IMPORT_NAME 0
+                9 STORE_NAME 0
+                12 LOAD_CONST 2
+                15 LOAD_CONST 3
+                18 MAKE_FUNCTION 0
+                21 STORE_NAME 1
+                24 LOAD_NAME 1
+                27 CALL_FUNCTION 0
+                30 POP_TOP
+                31 LOAD_CONST 1
+                34 RETURN_VALUE
